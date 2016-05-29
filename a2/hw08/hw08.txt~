@@ -1,2 +1,0 @@
--split multi-element list until it has been converted into a set of single-element lists, which are inherently sorted
--smallest elements of both lists will be compared. smaller element is placed in a new list.

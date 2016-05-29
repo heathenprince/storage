@@ -1,5 +1,0 @@
--split multi-element list until it has been converted into a set of single-element lists, which are inherently sorted
--smallest elements of both lists will be compared. smaller element is placed in a new list.
--top elements from each list continue to be compared to one another, with the smaller of the two placed as the next element in the new list. items are compared until one list is exhausted, in which case all elements from the remaining list are placed in the new list (works because each of the two lists is sorted within itself)
--merge merge merge!
--sorted list whoo!
