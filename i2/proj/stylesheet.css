@@ -1,0 +1,16 @@
+div a {
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background-color: gray;
+    text-decoration: none;
+    color:green;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}

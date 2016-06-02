@@ -1,0 +1,12 @@
+<!-- Anna Tolen
+IntroCS2 pd3
+HW09 - How Many IP Addresses?
+2015-02-25 -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>In a given IP address, there are <strong>four</strong> fields (octets). Each field has <strong>256</strong> possible values: the integers between 0 and 255, inclusive. To find the total number of IP addresses one should find the value of 256<sup>4</sup>
+
+</body>
+</html>

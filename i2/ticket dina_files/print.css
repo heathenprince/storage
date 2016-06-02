@@ -1,0 +1,241 @@
+@media print
+{
+  *
+  {
+    display: block !important;
+    overflow: visible !important;
+    float: none !important;
+    vertical-align: top !important;
+    height: auto !important; /* Bug #11082 Mike O - Stop Firefox from printing tons of blank pages */
+    position: relative !important; /* Bug #11082 Mike O - Stop Firefox from printing tons of blank pages */
+  }
+  
+  *
+  {
+    *position: static !important;
+  }
+  
+  DIV
+  {
+    width: 100%; /* Bug #13941 QG/UMN - remove !important to allow barcode JS to print properly */
+  }
+  
+  TABLE
+  {
+    width: 100% !important;
+  }
+  
+  TR
+  {
+    width: 100% !important;
+  }
+  
+  TD
+  {
+    width: 100% !important;
+  }
+  
+  TD.left
+  {
+    width: auto !important;
+  }
+  
+  DIV.key
+  {
+    width: auto !important;
+    text-align: left !important;
+    display: inline !important;
+  }
+  
+  DIV.value
+  {
+    width: auto !important;
+    text-align: left !important;
+    display: inline !important;
+  }
+  
+  DIV.value > DIV
+  {
+    width: auto !important;
+    text-align: left !important;
+    display: inline !important;
+  }
+  
+  /* Bug #13941 QG/UMN - allow barcode JS to print properly */
+  DIV.report_barcode DIV
+  {
+    height: 35px !important;
+    float: left !important;
+  }
+
+  TD.key
+  {
+    width: auto !important;
+  }
+  
+  TD.value
+  {
+    width: auto !important;
+  }
+  
+  STYLE
+  {
+    display: none !important;
+  }
+  
+  SCRIPT
+  {
+    display: none !important;
+  }
+    
+#noprint
+{
+    display: none !important;
+}
+
+BODY.group_viewer_app
+{
+  margin: 0px;
+}
+
+IFRAME
+{
+  display: none;
+}
+/* Bug#8368 ANU IE6 issue width modified . *//* Bug#7799 ,Bug# 6674 and Bug# 6699 To set the Page layout */
+.wait_table
+{
+  display: none;
+}
+.message_table
+{
+  display: none;
+}
+.message_dialog_inner
+{
+  display: none;
+}
+.message_dialog_outer
+{
+  display: none;
+  border: none;
+}
+.message_dialog
+{
+  display: none;
+}
+.cover
+{
+  display: none;
+}
+.action_bar
+{
+  display: none;
+}
+.menus
+{
+  display: none;
+}
+.tabs
+{
+  display: none;
+}
+.footer
+{
+  display: none;
+}
+.b_off
+{
+  display: none;
+}
+.b_on
+{
+  display: none;
+}
+
+.outer_bottom
+{
+  background: none;
+}
+.outer_left
+{
+  background: none;
+}
+.outer_right
+{
+  background: none;
+}
+.outer_top
+{
+  background: none;
+}
+.outer_tl
+{
+  background: none;
+}
+.outer_bl
+{
+  background: none;
+}
+.outer_br
+{
+  background: none;
+}
+.outer_tr
+{
+  background: none;
+  padding: 0px;
+}
+.outer_margin
+{
+  background: none;
+}
+
+.list_bottom
+{
+  background: none;
+}
+.list_left
+{
+  background: none;
+}
+.list_right
+{
+  background: none;
+}
+.list_top
+{
+  background: none;
+}
+.list_tl
+{
+  background: none;
+}
+.list_bl
+{
+  background: none;
+}
+.list_br
+{
+  background: none;
+}
+.list_tr
+{
+  background: none;
+}
+.list_margin
+{
+  background: none;
+}
+
+.wrapframer_tb
+{
+  background: none;
+}
+
+  TABLE.button_row *
+  {
+    display: none !important;
+}
+
+}

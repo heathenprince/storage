@@ -1,0 +1,8 @@
+Anna Tolen
+IntroCS2 pd3
+HW16 -- Reflection
+2015-03-11
+
+	I rushed my way through the exam and had almost half the period to spare. I spent that time going over answers, though whether that was for better or worse I can't say; I changed a bunch of answers thinking that they were trick(y) questions that I was interpreting too simply. I got at least four questions wrong because of this (that I would've otherwise gotten right). I overanalyzed a bunch of questions and answer choices, ignoring the instructions at the beginning of the exam. 
+	
+	Next time I'll pay more attention to how syntax(?) of code affects output. I'll also try to sleep more so that I'll be less anxious (and less likely to change my answers). I'll think more simply and not overcomplicate things that don't need to be overcomplicated.

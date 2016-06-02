@@ -1,0 +1,28 @@
+Anna Tolen
+IntroCS2 pd3
+HW04 -- HTML Resources on the Web
+
+1. 	w3schools
+	http://www.w3schools.com/html/default.asp
+	"html tutorial" entered into Google search
+	Extremely thorough, contains truckloads of useful information, easy to use and understand.
+
+2. 	HTML Code Tutorial
+	http://www.htmlcodetutorial.com/
+	"html tutorial" entered into Google search
+	Easy to navigate, clear, concise, can find help for whatever it is that one needs help with quickly.
+	
+3. 	HTML Tutorial
+	http://html.net/tutorials/html/
+	"html tutorial" entered into Google search
+	Breaks down HTML into fundamental components, starts from basics. and allows one to work their way up to more complicated coding. Clear language and pictures!
+	
+4. 	Codeacademy
+	http://www.codecademy.com/
+	Prior knowledge of website
+	For people who are a little bit more ambitious–teaches various computer languages and is fun, easy, and not frustrating. Teaches the user piece-by-piece so that the user has a very clear idea of what each thing they learn does.
+	
+5. 	HTML Dog
+	http://htmldog.com/guides/html/beginner/
+	"html resources" entered into Google search
+	Breaks HTML up into what can visually be created on a web page. Teaches each step individually (e.g. Page titles, lists, images) and has a cumulative overview at the end. Has Beginner-level HTML resources as well as Intermediate- and Advanced-level. 

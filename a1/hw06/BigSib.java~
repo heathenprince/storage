@@ -1,0 +1,13 @@
+/* Anna Tolen
+APCS1 pd10
+HW05 -- A Classy Division of Labor
+2015-09-21 */
+
+public class BigSib {
+    public static String greet(String freshie) {
+	String s;
+	s = "Hey, " + freshie + "! Take two terms of CS!";
+	return s;
+    }
+}
+    

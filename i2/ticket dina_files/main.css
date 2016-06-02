@@ -1,0 +1,2842 @@
+/* This file: business/include/main.css  
+   General style (Neither data nor app specific) ------------------------------------------------------------- 
+*/
+
+/* HTML fixes */
+HTML
+{
+  height: 100%;
+  overflow: hidden; /* Used to remove both scrollbars in transitional mode */
+  border: 0px;
+}
+/* required to remove vertical scrollbar in strict mode */
+BODY
+{
+  height: 100%;
+  overflow: hidden;
+  margin: 0px;
+}
+*
+{
+  font-family: "Trebuchet MS" , Trebuchet, Verdana, Arial, Helvetica, "Lucida Grande" , sans-serif;
+}
+TABLE
+{
+  padding: 0px;
+  margin: 0px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+FORM
+{
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+}
+IMG
+{
+  border: 0;
+  margin: 0px;
+}
+
+DIV
+{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+ 
+/* small screen - not yet used */
+/*
+ * { font-size: 9pt } 
+ smaller button styles
+*/
+
+/* Headers need smaller margins than default style */
+H1
+{
+  margin-top: 2px;
+  margin-bottom: 4px;
+  font-size: 1.25em;
+  background-color: Transparent;
+}
+H2
+{
+  margin-top: 2px;
+  margin-bottom: 3px;
+  font-size: 1.2em;
+}
+H3
+{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+H4
+{
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-size: 1.0em;
+  font-weight: bold;
+}
+
+/* Bug #10105 Mike O */
+TABLE.suspended_table *
+{
+  text-align: left;
+}
+
+FORM.form_inst > TABLE
+{
+  margin: 0;
+}
+
+TABLE.appl.launchable
+{
+  float: left;
+}
+
+/* Sortable tables */
+table.sortable a.sortheader
+{
+  color: #909090;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+table.sortable span.sortarrow
+{
+  color: black;
+  text-decoration: none;
+}
+TABLE.sortable TD
+{
+  padding: 3px;
+  border-bottom: 1px solid white;
+}
+
+table.sortable_paired a.sortheader
+{
+  color: #909090;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+table.sortable_paired span.sortarrow
+{
+  color: black;
+  text-decoration: none;
+}
+TABLE.sortable_paired TD
+{
+  padding: 3px;
+  border-bottom: 1px solid white;
+}
+
+TABLE.sortable_paired TD.button
+{
+  border-bottom: 0;
+}
+
+/*DIV.footer
+{
+  padding-bottom: 35px;
+}*/
+
+/* Generic header */
+TH
+{
+  color: #777; 
+  border-bottom: 1px solid #CCC;
+  vertical-align: bottom;
+  padding-right: 10px;
+  font-variant: small-caps;
+  text-align: left;
+}
+
+/* Messaging */
+/* Moved out of the code */
+.message_dialog_outer
+{
+  background-color: white;
+  border: solid 3px black;
+  padding: 0px;
+}
+
+/* Table display in CSS */
+DIV.table
+{
+  display: table;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+DIV.table_row
+{
+  display: table-row;
+  height: auto;
+  width: 100%;
+}
+DIV.table_cell
+{
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+}
+DIV.html_editor /* Bug# 12718 - Too much text would push page buttons off screen. I moved the sizing to CSS. DH 5/10/2012 */
+{
+  height: 200px;
+  width: 50% !important;
+  overflow:auto;
+}
+/* Legacy support for Internet Explorer */
+TABLE.table
+{
+  height: 100%;
+  width: 100%;
+}
+TR.table_row
+{
+  height: auto;
+  width: auto;
+}
+TD.table_cell
+{
+  height: auto;
+  width: auto;
+}
+
+TABLE.menus DIV.framer_scrollable
+{
+  width: auto !important;
+}
+
+/* borders */
+/* inner borders.rounded_metalic_dialog */
+.inner_bottom
+{
+  background: url(../images/bgLvl2b.gif) repeat-x left bottom;
+  height: 100%;
+  width: 100%;
+}
+.inner_left
+{
+  background: url(../images/bgLvl2l.gif) repeat-y left top;
+  height: 100%;
+  width: 100%;
+}
+.inner_right
+{
+  background: url(../images/bgLvl2r.gif) repeat-y right top;
+  height: 100%;
+  width: 100%;
+}
+.inner_top
+{
+  background: url(../images/bgLvl2t.gif) repeat-x 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+.inner_tl
+{
+  background: url(../images/bgLvl2tl.gif) no-repeat 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+.inner_bl
+{
+  background: url(../images/bgLvl2bl.gif) no-repeat 0px 100%;
+  height: 100%;
+  width: 100%;
+}
+.inner_br
+{
+  background: url(../images/bgLvl2br.gif) no-repeat right bottom;
+  height: 100%;
+  width: 100%;
+}
+.inner_tr
+{
+  background: url(../images/bgLvl2tr.gif) no-repeat 100% 0px;
+  height: 100%;
+  width: 100%;
+}
+.inner_padding
+{
+  padding-top: 7px;
+  padding-right: 21px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.inner_margin
+{
+  height: 100%;
+  width: 100%;
+  padding-top: 7px;
+  padding-right: 21px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.inner_header
+{
+  margin-bottom: -7px;
+}
+
+.inner_footer
+{
+  margin-top: -40px;
+}
+
+/* borders.rounded_metalic_outer */
+.outer_bottom
+{
+  background: url(../images/bgLvl1b.gif) repeat-x left bottom;
+  height: 100%;
+  width: 100%;
+}
+.outer_left
+{
+  background: url(../images/bgLvl1l.gif) repeat-y left top;
+  height: 100%;
+  width: 100%;
+}
+.outer_right
+{
+  background: url(../images/bgLvl1r.gif) repeat-y right top;
+  height: 100%;
+  width: 100%;
+}
+.outer_top
+{
+  background: url(../images/bgLvl1t.gif) repeat-x 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+.outer_tl
+{
+  background: url(../images/bgLvl1tl.gif) no-repeat 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+.outer_bl
+{
+  background: url(../images/bgLvl1bl.gif) no-repeat 0px 100%;
+  height: 100%;
+  width: 100%;
+}
+.outer_br
+{
+  background: url(../images/bgLvl1br.gif) no-repeat right bottom;
+  height: 100%;
+  width: 100%;
+}
+.outer_tr
+{
+  background: url(../images/bgLvl1tr.gif) no-repeat 100% 0px;
+  height: 100%;
+  width: 100%;
+}
+.outer_padding
+{
+  padding-top: 17px;
+  padding-right: 17px;
+  padding-bottom: 17px;
+  padding-left: 17px;
+}
+
+.outer_margin
+{
+  height: 100%;
+  width: 100%;
+  padding-top: 17px;
+  padding-right: 17px;
+  padding-bottom: 17px;
+  padding-left: 17px;
+}
+
+.outer_header
+{
+  margin-bottom: -17px;
+}
+
+.outer_footer
+{
+  margin-top: -34px;
+}
+
+/* list = borders.ui_dog_eared_list */
+.list_bottom
+{
+  background: url(../images/bgLvl2b-box3.gif) repeat-x left bottom;
+  height: 100%;
+  width: 100%;
+}
+.list_left
+{
+  background: url(../images/bgLvl2l-box3.gif) repeat-y left top;
+  height: 100%;
+  width: 100%;
+}
+.list_right
+{
+  background: url(../images/bgLvl2r-box3.gif) repeat-y right top;
+  height: 100%;
+  width: 100%;
+}
+.list_top
+{
+  background: url(../images/bgLvl2t-box3.gif) repeat-x 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+.list_tl
+{
+  background: url(../images/bgLvl2tl-box3.gif) no-repeat 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+.list_bl
+{
+  background: url(../images/bgLvl2bl-box3.gif) no-repeat 0px 100%;
+  height: 100%;
+  width: 100%;
+}
+.list_br
+{
+  background: url(../images/bgLvl2br-box3.gif) no-repeat right bottom;
+  height: 100%;
+  width: 100%;
+}
+.list_tr
+{
+  background: url(../images/bgLvl2tr-box3.gif) no-repeat 100% 0px;
+  height: 100%;
+  width: 100%;
+}
+.list_padding
+{
+  padding-top: 7px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.list_margin
+{
+  height: 100%;
+  width: 100%;
+  padding-top: 7px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.list_header
+{
+  margin-bottom: -7px;
+}
+
+.list_footer
+{
+  margin-top: -60px;
+}
+
+/* start new border 
+IMG.outer_tl { width:30px; height:30px; position:absolute; display:none; }
+IMG.outer_tr { width:29px; height:29px; position:absolute; display:none; }
+IMG.outer_bl { width:30px; height:30px; position:absolute; display:none; }
+IMG.outer_br { width:30px; height:30px; position:absolute; display:none; }
+IMG.outer_top { position:absolute; height:17px; }
+IMG.outer_bottom { position:absolute; height:24px; }
+DIV.outer_left  { position:absolute; width:18px; background: url(../images/outer_left.gif) repeat-y left top; }
+DIV.outer_right { position:absolute; width:25px; background: url(../images/outer_right.gif) repeat-y left top; }
+TD.outer { background-color:#EEE; }
+
+IMG.inner_tl { width:25px; height:25px; position:absolute; display:none; }
+IMG.inner_tr { width:33px; height:33px; position:absolute; display:none; }
+IMG.inner_bl { width:33px; height:33px; position:absolute; display:none; }
+IMG.inner_br { width:33px; height:33px; position:absolute; display:none; }
+IMG.inner_top { position:absolute; height:5px; }
+IMG.inner_bottom { position:absolute; height:15px; }
+DIV.inner_left  { position:absolute; width:5px; background: url(../images/inner_left.gif) repeat-y left top; }
+DIV.inner_right { position:absolute; width:15px; background: url(../images/inner_right.gif) repeat-y left top; }
+TD.inner { background-color:white; }
+
+IMG.dogear_tl { width:30px; height:80px; position:absolute; display:none; }
+IMG.dogear_tr { width:68px; height:80px; position:absolute; display:none; }
+IMG.dogear_bl { width:30px; height:30px; position:absolute; display:none; }
+IMG.dogear_br { width:30px; height:30px; position:absolute; display:none; }
+IMG.dogear_top { position:absolute; height:80px; }
+IMG.dogear_bottom { position:absolute; height:30px; }
+DIV.dogear_left  { position:absolute; width:30px; background: url(../images/dogear_left.gif) repeat-y left top; }
+DIV.dogear_right { position:absolute; width:30px; background: url(../images/dogear_right.gif) repeat-y left top; }
+TD.dogear { background-color:white; }
+
+#inner_window { height:100%;width:100%;position:absolute;left:0px;top:0px; }
+
+DIV.scrollable { height:100%; width:100%; overflow:auto }
+*//* end new border */
+
+SPAN.link
+{
+  cursor: pointer;
+  text-decoration: underline;
+  color: Blue;
+}
+
+/* Bug #10211 Mike O - Don't let Safari underline button text */
+A.button_link
+{
+  text-decoration: none !important;
+}
+
+/* cbutton and submit_button styles ====================================== */
+
+DIV.left
+{
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  height: 100%;
+  float: left;
+}
+DIV.right
+{
+  vertical-align: middle;
+  height: 100%;
+  float: right;
+}
+
+SPAN.left, SPAN.right
+{
+  vertical-align: middle;
+}
+
+.b_off
+{
+  background-color: #FFF;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.b_on
+{
+  background-color: #EEE;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* start: Site-specific colors for cbutton and submit_button */
+.b_off.b_color1_b_off
+{
+  background: url(../images/button_bg.png) repeat-x;
+  color: White;
+	overflow: hidden;
+}
+/* background-color: #2458AC;  primary accent color.  Used for button color. Ex: #2458AC=default Blue */
+.b_on.b_color1_b_on
+{
+  background: url(../images/button_bg_on.png) repeat-x;
+  color: White;
+	overflow: hidden;
+}
+/* background-color:  #4478BC; when button is pressed down. Ex: Darker blue */
+/* color2 would likely be a secondary accent color.  Ex: School colors mights be blue and orange, where orange is color2 */
+.b_off.b_color3_b_off
+{
+  background-color: white; /*background: url(../images/button2_bg.png) repeat-x left bottom;*/
+  color: #00B;
+}
+/* alternate color for less important buttons.  Ex: Gray */
+.b_on.b_color3_b_on
+{
+  background-color: white; /*background: url(../images/button2_bg_on.png) repeat-x left bottom;*/
+  color: #00B;
+}
+/* background-color: #DDD;  when button is pressed down Ex: darker gray */
+
+
+/* Bug 9649: FT: Changed the background-color from gray to transparent so gray does not show.  
+ * Shading is now done in tab image image. */
+.b_off.b_color_tab_b_off
+{
+  color: black;
+  top: 3px;
+  background: Transparent;
+}
+/* Active tab. */
+.b_on.b_color_tab_b_on
+{
+  color: #333;
+  top: 1px;
+  background: Transparent;
+}
+/* Non-active tab. */
+
+.b_off.b_colorTrans_b_off
+{
+  background: Transparent;
+}
+.b_on.b_colortrans_b_on
+{
+  background: Transparent;
+}
+.b_off.b_colorTrans_b_off_disable
+{
+  background-color: Gray;
+  color: #00B;
+  font-weight: bold;
+  color: Blue;
+}
+/* alternate color for less important buttons.  Ex: Gray */
+.b_on.b_colorTrans_b_on_disable
+{
+  background-color: Gray;
+  color: #00B;
+  font-weight: bold;
+  color: Blue;
+}
+/* background-color: #DDD;  when button is pressed down Ex: darker gray */
+/* End Bug 9649 */
+
+.b_off.b_color_tab_b_off
+{
+  color: black;
+  top: 1px;
+}
+/* Active tab. */
+.b_on.b_color_tab_b_on
+{
+  color: #333;
+  top: 1px;
+}
+/* Non-active tab. */
+/* end of site-specific colors */
+/* bug 6228 */
+SPAN.b_disabled .left
+{
+  height: 19px;
+  font-size: 75%;
+  font-weight: normal;
+  color: white;
+  background-color: #BBB;
+  padding-top: 0px;
+  padding-left: 8px;
+}
+/* Bug #10203 Mike O - Min width IE hack */
+SPAN.b_disabled_ie .left
+{
+  width: 60px;
+}
+.b_off.b_color1_b_off_disable
+{
+  background: url(../images/button2_bg.png) repeat-x left top;
+  color: White;
+  font-weight: bold;
+  color: White;
+}
+/* background-color: #2458AC;  primary accent color.  Used for button color. Ex: #2458AC=default Blue */
+.b_on.b_color1_b_on_disable
+{
+  background: url(../images/button2_bg_on.png) repeat-x left top;
+  color: White;
+  font-weight: bold;
+  color: White;
+}
+/* background-color:  #4478BC; when button is pressed down. Ex: Darker blue */
+/* color2 would likely be a secondary accent color.  Ex: School colors mights be blue and orange, where orange is color2 */
+.b_off.b_color3_b_off_disable
+{
+  background-color: Gray;
+  color: #00B;
+  font-weight: bold;
+  color: Blue;
+}
+/* alternate color for less important buttons.  Ex: Gray */
+.b_on.b_color3_b_on_disable
+{
+  background-color: Gray;
+  color: #00B;
+  font-weight: bold;
+  color: Blue;
+}
+/* background-color: #DDD;  when button is pressed down Ex: darker gray */
+
+.b_off.b_color_tab_b_off_disable
+{
+  color: Gray;
+  top: 3px;
+  background-color: white;
+  font-weight: bold;
+  color: Blue;
+}
+/* Active tab. */
+.b_on.b_color_tab_b_on_disable
+{
+  color: #310;
+  top: 1px;
+  background-color: #DDD;
+  font-weight: bold;
+  color: Blue;
+}
+/* Non-active tab. */
+/* end of bug 6228 */
+
+/* short expand white (Button to expand/collapse area) */
+.b_expand_white
+{
+  height: 20px;
+}
+DIV.b_expand_white .left
+{
+  width: 20px;
+  padding-top: 0px;
+  padding-left: 0px;
+  font-size: 3pt;
+}
+.b_on .b_expand_white
+{
+  padding-top: 5px;
+  background-color: White;
+}
+DIV.b_expand_white .right
+{
+  width: 0px;
+  padding-top: 0px;
+  font-size: 3pt;
+}
+.b_off .b_expand_white .left
+{
+  background: url(../images/tableRowDisclosureIndicator.png) no-repeat left center;
+  background-color: White;  
+}
+.b_on .b_expand_white .left
+{
+  background: url(../images/tableRowExpandIndicator.png) no-repeat left top;
+  background-color: White;
+}
+
+/* Bug #10195 Mike O */
+.cbutton_expand_row *
+{
+  /*vertical-align: middle;*/
+  white-space: nowrap;
+}
+/* Bug #10520 Mike O */
+.k > .cbutton_expand_row
+{
+  float: right; 
+}
+.expanded_header .cbutton_expand_row table
+{
+  width:100%;
+}
+
+
+TD.cbutton_expand
+{
+  width: 25px;
+}
+
+/* 
+ * Bug 9910: FT: This caused a problem with Cashier caret button background.
+ * Had to give Bank Rec its own version of b_expand_white with a transparent background
+ * This bug was introduced when this files was checked into 9917 / September 22.
+*/
+.b_expand_white_bank_rec
+{
+  height: 13px;
+}
+DIV.button.b_expand_white_bank_rec .left
+{
+  width: 13px;
+  padding-top: 0px;
+  padding-left: 0px;
+  font-size: 3pt;
+}
+DIV.button.b_expand_white_bank_rec .right
+{
+  width: 0px;
+  padding-top: 0px;
+  font-size: 3pt;
+}
+.b_off .b_expand_white_bank_rec .left
+{
+  background: url(../images/arrow_right_alpha.gif) no-repeat left top;
+}
+.b_on .b_expand_white_bank_rec .left
+{
+  background: url(../images/arrow_down_alpha.gif) no-repeat left top;
+}
+/* End 9910 */
+
+/* tall white */
+.b_tall_white
+{
+  height: 38px;
+  width: 100%;
+}
+/* Bug #10240 Mike O - Fix min-width in non-IE browsers */
+.b_tall_white .left
+{
+  width: 100px; /*Bug 10506 NJ*/
+  padding-top: 6px;
+  padding-left: 16px;
+}
+/*Bug 10506 NJ*/
+html>body .b_tall_white .left
+{
+  min-width: 100px;
+  padding-top: 6px;
+  padding-left: 16px;
+}
+/*End Bug 10506 NJ*/
+/* End Bug #10240 MikE O */
+.b_tall_white_ie .left
+{
+  width: 100px;
+}
+.b_tall_white .right
+{
+  width: 22px;
+  padding-top: 6px;
+}
+
+.b_off .b_tall_white .left
+{
+  background: url(../images/button_tall_white.gif) no-repeat /*left top*/;
+  float: left;
+}
+.b_on .b_tall_white .left
+{
+  background: url(../images/button_tall_white_on.gif) no-repeat /*left top*/;
+  float: left /*filter: DropShadow(Color=#0000CC, OffX=1, OffY=1, Positive=1); Shadowed text*/;
+}
+.b_off .b_tall_white .right
+{
+  background: url(../images/button_tall_white_end.gif) no-repeat /*left top*/;
+  float: right;
+}
+.b_on .b_tall_white .right
+{
+  background: url(../images/button_tall_white_end_on.gif) no-repeat /*left top*/;
+  float: right;
+}
+
+/* tall gray */
+.b_tall_gray
+{
+  height: 38px;
+}
+/* Bug #10240 Mike O - Fix min-width in non-IE browsers */
+.button .b_tall_gray .left
+{
+  min-width: 100px;
+  padding-top: 6px;
+  padding-left: 16px;
+}
+.button .b_tall_gray_ie .left
+{
+  width: 100px;
+}
+/* End Bug #10240 */
+.button .b_tall_gray .right
+{
+  width: 22px;
+  padding-top: 6px;
+}
+.b_off .b_tall_gray .left
+{
+  background: url(../images/button_tall_gray.gif) no-repeat left top;
+}
+.b_on .b_tall_gray .left
+{
+  background: url(../images/button_tall_gray_on.gif) no-repeat left top;
+}
+/* filter: DropShadow(Color=#0000CC, OffX=1, OffY=1, Positive=1); Shadowed text */
+.b_off .b_tall_gray .right
+{
+  background: url(../images/button_tall_gray_end.gif) no-repeat left top;
+}
+.b_on .b_tall_gray .right
+{
+  background: url(../images/button_tall_gray_end_on.gif) no-repeat left top;
+}
+
+/* medium gray */
+.b_medium_gray
+{
+  height: 27px;
+}
+.b_medium_gray .left
+{
+  font-size: 85%;
+  padding-top: 3px;
+  padding-left: 12px;
+  min-width: 75px; /* Bug #10203 Mike O */
+}
+/* Bug #10203 Mike O - Min width IE hack */
+.b_medium_gray_ie .left
+{
+  width: 75px;
+}
+.b_medium_gray .right
+{
+  width: 15px;
+  padding-top: 3px;
+}
+.b_off .b_medium_gray .left
+{
+  background: url(../images/button_medium_gray.gif) no-repeat /*left top*/ transparent;
+  float: left;
+}
+.b_on .b_medium_gray .left
+{
+  background: url(../images/button_medium_gray_on.gif) no-repeat /*left top*/ transparent;
+  float: left;
+}
+/* filter: DropShadow(Color=#0000CC, OffX=1, OffY=1, Positive=1); Shadowed text */
+.b_off .b_medium_gray .right
+{
+  background: url(../images/button_medium_gray_end.gif) no-repeat /*left top*/ transparent;
+  float: right;
+}
+.b_on .b_medium_gray .right
+{
+  background: url(../images/button_medium_gray_end_on.gif) no-repeat /*left top*/;
+  float: right;
+}
+
+.b_on.b_medium_gray .right
+{
+  background: url(../images/button_medium_gray_end_on.gif) no-repeat /*left top*/;
+  float: right;
+}
+
+.b_medium_white
+{
+  height: 27px;
+}
+.b_medium_white .left
+{
+  min-width: 75px; /* Bug #10219 Mike O - Cross browser alignment issues */
+  font-size: 85%;
+  padding-top: 3px;
+  padding-left: 16px;
+}
+/* Bug #10203 Mike O - Min width IE hack */
+.b_medium_white_ie .left
+{
+  width: 75px;
+}
+.b_medium_white .right
+{
+  width: 15px;
+  padding-top: 3px;
+}
+.b_off .b_medium_white .left
+{
+  background: url(../images/button_medium_white.gif) no-repeat /*left top*/;
+  float: left;
+}
+.b_on .b_medium_white .left
+{
+  background: url(../images/button_medium_white_on.gif) no-repeat /*left top*/;
+  float: left;
+}
+/* filter: DropShadow(Color=#0000CC, OffX=1, OffY=1, Positive=1); Shadowed text */
+.b_off .b_medium_white .right
+{
+  background: url(../images/button_medium_white_end.gif) no-repeat /*left top*/;
+  float: right;
+}
+.b_on .b_medium_white .right
+{
+  background: url(../images/button_medium_white_end_on.gif) no-repeat /*left top*/;
+  float: right;
+}
+
+/* short on gray background */
+.b_short_gray
+{
+  height: 19px;
+}
+.b_short_gray .left
+{
+  min-width: 28px;
+  font-size: 75%;
+  padding-top: 0px;
+  padding-left: 8px;
+}
+.b_short_gray_ie .left
+{
+  width: 28px;
+}
+.b_short_gray .right
+{
+  width: 9px;
+  padding-top: 0px;
+  font-size: 4pt;
+}
+.b_off .b_short_gray .left
+{
+  background: url(../images/button_short_gray.gif) no-repeat /*left top*/;
+  float: left;
+}
+.b_on .b_short_gray .left
+{
+  background: url(../images/button_short_gray_on.gif) no-repeat /*left top*/;
+  float: left;
+}
+/* filter: DropShadow(Color=#0000CC, OffX=1, OffY=1, Positive=1);  Shadowed text*/
+.b_off .b_short_gray .right
+{
+  background: url(../images/button_short_gray_end.gif) no-repeat /*left top*/;
+  float: right;
+}
+.b_on .b_short_gray .right
+{
+  background: url(../images/button_short_gray_end_on.gif) no-repeat /*left top*/;
+  float: right;
+}
+
+/* white short */
+.b_short_white
+{
+  height: 19px;
+}
+.b_short_white .left
+{
+  min-width: 28px;
+  font-size: 0.75em;
+  padding-top: 0px;
+  padding-left: 8px;
+}
+.b_short_white_ie .left
+{
+}
+.b_short_white .right
+{
+  width: 9px;
+  padding-bottom: 0px;
+  float: right;
+}
+.b_off .b_short_white .left
+{
+  background: url(../images/button_short_white.gif) no-repeat /*left top*/;
+  float: left;
+}
+.b_on .b_short_white .left
+{
+  background: url(../images/button_short_white_on.gif) no-repeat /*left top*/;
+  float: left;
+}
+/* filter: DropShadow(Color=#0000CC, OffX=1, OffY=1, Positive=1); Shadowed text */
+.b_off .b_short_white .right
+{
+  background: url(../images/button_short_white_end.gif) no-repeat /*left top*/;
+  float: right;
+}
+.b_on .b_short_white .right
+{
+  background: url(../images/button_short_white_end_on.gif) no-repeat /*left top*/;
+  float: right;
+}
+
+
+/* tabs on gray *//*BUG 4836 width added BLL*/
+DIV.tabs
+{
+  padding-left: 12px;
+  padding-right: 12px;
+  white-space: nowrap;
+  width: 100%;
+}
+.b_tab_gray
+{
+  height: 32px;
+}
+.b_tab_gray .left
+{
+  padding-top: 6px;
+  padding-left: 13px;
+  height: 32px;
+}
+.b_tab_gray .right
+{
+  width: 18px;
+  padding-top: 6px;
+  height: 32px;
+}
+/*6229 width 22 to 18*/
+.b_off .b_tab_gray .left
+{
+  background: url(../images/button_tab_gray.gif) no-repeat /*left top*/;
+}
+.b_on .b_tab_gray .left
+{
+  font-size: 0.90em;
+  background: url(../images/button_tab_gray_on.gif) no-repeat /*left top*/;
+}
+DIV.b_tab_gray > .left
+{
+	float:left;
+}
+/* filter: DropShadow(Color=#0000CC, OffX=1, OffY=1, Positive=1); Shadowed text */
+.b_off .b_tab_gray .right
+{
+  background: url(../images/button_tab_gray_end.gif) no-repeat /*left top*/;
+}
+.b_on .b_tab_gray .right
+{
+  background: url(../images/button_tab_gray_end_on.gif) no-repeat /*left top*/;
+}
+DIV.b_tab_gray > .right
+{
+	float:right;
+}
+
+SPAN.button.b_tab_gray .left { height:32px; padding-top:6px;padding-left:13px;}
+SPAN.button.b_tab_gray .right { height:32px;width:18px; padding-top:6px; }/*6629 width 22 to 18*/
+.b_off .b_tab_gray .left { background: url(../images/button_tab_gray.gif) no-repeat left top;}
+.b_on .b_tab_gray .left {  font-size: 0.90em; background: url(../images/button_tab_gray_on.gif) no-repeat left top; } /* filter: DropShadow(Color=#0000CC, OffX=1, OffY=1, Positive=1); Shadowed text */ 
+.b_off .b_tab_gray .right { background: url(../images/button_tab_gray_end.gif) no-repeat left top;} 
+.b_on .b_tab_gray .right { background: url(../images/button_tab_gray_end_on.gif) no-repeat left top;}
+
+
+/* BUG 4836 for tabs sizing and list menu BLL */
+DIV.list_menu
+{
+  background-color: white;
+  border: 2px solid black;
+  display: none;
+  position: absolute;
+  top: 30px; /* Bug #10586 Mike O - Tweaked defaults to line up better */
+  left: 13px; /* Bug #10586 Mike O - Tweaked defaults to line up better */
+  overflow: auto;
+  height: auto;
+  width: 150px;
+  z-index: 1; /* Bug #10586 Mike O - Ensure that it's on top */
+}
+DIV.tabs_inner
+{
+  overflow: hidden;
+  top: 0.16em;
+}
+/*Bug#6216 as per Jeff -  ANU*//* 6229 */
+/* end BUG 4836 */
+
+/* Bug #10565 Mike O - Removed space below tabs */
+DIV.tabs_inner TD
+{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  height: 32px;
+}
+
+/* buttons on quick tran menu */
+.b_quick_item
+{
+  height: 48px;
+}
+SPAN.button.b_quick_item .left
+{
+  width: 100px; /* minimum */
+  padding-top: 6px;
+  padding-left: 16px;
+}
+SPAN.button.b_quick_item .right
+{
+  width: 22px;
+  padding-top: 6px;
+}
+
+.b_off .b_quick_item .left
+{
+  background: url(../images/button_tall_white.gif) no-repeat left top;
+}
+.b_on .b_quick_item .left
+{
+  background: url(../images/button_tall_white_on.gif) no-repeat left top;
+}
+/*filter: DropShadow(Color=#0000CC, OffX=1, OffY=1, Positive=1); Shadowed text*/
+.b_off .b_quick_item .right
+{
+  background: url(../images/button_tall_white_end.gif) no-repeat left top;
+}
+.b_on .b_quick_item .right
+{
+  background: url(../images/button_tall_white_end_on.gif) no-repeat left top;
+}
+
+/* disabled button */
+.b_disabled
+{
+  height: 19px;
+}
+SPAN.b_disabled .left
+{
+  font-size: 75%;
+  font-weight: normal;
+  color: white;
+  background-color: #BBB;
+  padding-top: 0px;
+  padding-left: 8px;
+}
+SPAN.b_disabled .right
+{
+  width: 9px;
+  padding-top: 0px; /* vertical-align:text-top; */
+  font-size: 5pt;
+}
+
+.b_off .b_disabled SPAN.left
+{
+  background: url(../images/button_short_white_on.gif) no-repeat left top;
+}
+.b_on .b_disabled SPAN.left
+{
+  background: url(../images/button_short_white_on.gif) no-repeat left top;
+}
+/* filter: DropShadow(Color=#0000CC, OffX=1, OffY=1, Positive=1); Shadowed text */
+.b_off .b_disabled SPAN.right
+{
+  background: url(../images/button_short_white_end_on.gif) no-repeat left top;
+}
+.b_on .b_disabled SPAN.right
+{
+  background: url(../images/button_short_white_end_on.gif) no-repeat left top;
+}
+
+/* image button */
+.b_image .left
+{
+  background-color: White;
+}
+.b_image .right
+{
+  background-color: White;
+}
+
+.b_off .b_image .left
+{
+}
+.b_on .b_image .left
+{
+}
+.b_off .b_image .right
+{
+}
+.b_on .b_image .right
+{
+}
+
+INPUT.submit_button, BUTTON.submit_button
+{
+  border: 0px;
+  height: 0px;
+  width: 0px;
+  font-size: 0px;
+}
+/* can't use display:none because hitting return won't submit the form */
+
+/* end cbutton styles */
+
+/* END General style ------- */
+
+
+/* Business Data specific  --------------------------------------------------------------------------------------------- */
+TR.status_empty TD
+{
+  background-color: white;
+}
+TR.status_active TD
+{
+  background-color: #BBDD88;
+}
+/* greenish */
+TR.status_locked TD
+{
+  background-color: #BBAA88;
+}
+/* BUG#5396 */
+TR.status_balanced TD
+{
+  background-color: pink;
+}
+TR.status_updated TD
+{
+  background-color: #CCC;
+}
+TR.status_accepted TD
+{
+  background-color: yellow;
+}
+
+TR.Core_event_empty TD
+{
+  background-color: white;
+}
+TR.Core_event_active TD
+{
+  background-color: #BBDD88;
+}
+TR.Core_event_suspended TD
+{
+  background-color: orange;
+}
+TR.Core_event_voided TD
+{
+  background-color: pink;
+}
+TR.Core_event_completed TD
+{
+  background-color: white;
+}
+
+TR.core_item_voided TD
+{
+  background-color: pink;
+}
+TR.core_item_active TD
+{
+}
+TR.core_item_completed TD
+{
+}
+
+TR.deposit_pre_deposit TD
+{
+  background-color: orange;
+}
+TR.deposit_voided TD
+{
+  background-color: pink;
+}
+TR.deposit_completed TD
+{
+}
+TR.deposit_accepted TD
+{
+  background-color: yellow;
+}
+
+/* Core_event (shopping list) --------------------------- */
+/*.department_icon { margin-top: 5px; }*/
+.toggle
+{
+  width: 1.5em;
+  /* float: left; */
+}
+/* toggle of "+" at beginning of shopping list item */
+P.core_event_prompt
+{
+  text-align: center;
+  color: #777;
+  font-weight: bold;
+}
+DIV.confirmation_number_label
+{
+  font-size: 0.7em;
+  text-align: center;
+}
+DIV.confirmation_number
+{
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+/* Bug #10582 Mike O - Changed selectors to support DIVs */
+TABLE.details, .table.details, .details.table /*Bug 10660 NJ*/
+{
+  display: block;
+}
+/*Bug 9440 NJ*/
+TABLE.details TD, .details .table_cell
+{
+  border: none;
+  font-size: 0.8em;
+  line-height: 90%;
+  text-align:right;
+  
+}
+TABLE.details DIV.key, .details DIV.key, .details DIV.key
+{
+  padding-left: 2em;
+  width: auto;
+}
+/* End Bug #10582 Mike O */
+/*Bug 9440 NJ*/
+TABLE#core_file_list
+{
+  width: 100%;
+}
+TABLE#core_file_list TH
+{
+  border-bottom:   solid 2px #CCC; /*Bug 15003 NJ- rectified syntax*/
+}
+
+DIV.grand_total
+{
+  text-align: right;
+}
+/* total should be to the right */
+DIV.grand_total SPAN.key
+{
+  padding-right: 0.2em;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+DIV.grand_total SPAN.value
+{
+  font-weight: bold;
+}
+
+DIV.receipt_separator
+{
+  border-bottom: black 1px solid;
+}
+DIV.balance
+{
+  text-align: right;
+  font-weight: bold;
+}
+DIV.balance SPAN.key
+{
+  padding-right: 0.2em;
+  font-variant: small-caps;
+}
+
+TABLE.transactions
+{
+  width: 100%;
+  table-layout: fixed; /* Bug #9942 Mike O */
+}
+
+TABLE.transactiontaxes
+{
+  width: 100%;
+}  /* BUG #12804 QG */
+
+/* centering of actions buttons under expanded core_item in shopping list, and thin gray line under the buttons, with some space under the line */
+TR.row_actions TD
+{
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+DIV.shopping_list_prompt
+{
+  font-size: smaller;
+  color: blue;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+IFRAME.shopping_list_alternative
+{
+  height: 510px;
+}
+TEXTAREA#shopping_list_alternative
+{
+  height: 300px;
+  width: 700px;
+  font-size: 7pt;
+  font-weight: normal;
+  font-family: Courier;
+}
+
+P.receipt_message_bottom
+{
+  font-size: smaller;
+  color: #777;
+}
+/* end CORE event */
+
+/* For quick core_item menu */
+TABLE.button_layout
+{
+  border: 2px solid black;
+  width: 100%;
+}
+TABLE.button_layout TD
+{
+  padding: 4px;
+  text-align: center;
+}
+
+/* Transaction menus and section lists */
+DIV.section_prompt
+{
+  /*font-variant: small-caps; Bug 12712 NJ-remove, as menus and pages need to have same formatting for prompt */
+  color: #777;
+  text-align: left;
+}
+TABLE.vector_fields
+{
+  width: 100%;
+}
+/* Bug #10105 Mike O - Firefox alignment issues */
+TD.description
+{
+  text-align: left;
+  font-weight:bold; /*Bug 13161 NJ*/
+}
+TD.description2
+{
+  font-size: 0.9em;
+  color: green;
+}
+
+TD.taxtype 
+{
+  /* Bug 15821 MJO - Changed from 2em, to allow for more room for the description */
+  width:1em;
+}
+TD.voided
+{ 
+  width:2em;
+}
+/* smaller green description for core item */
+.vector_fields TR.r0 TD
+{
+  border-top: #CCC 1px solid;
+  text-align: left;
+}
+TD.last_row
+{
+  border-top: #CCC 1px solid;
+}
+SPAN.core_item_add
+{
+  font-variant: small-caps;
+  color: #777;
+}
+/* click to add transaction */
+/* end */
+
+/* Tender { width: 100% } */
+TABLE.tender_details TD
+{
+  font-size: smaller;
+}
+/* tender details are smaller than tender label */
+
+/* Hide track_data field for Tender.Credit.POS */
+TD.track_data
+{
+  display: none;
+}
+
+/* field validation error messages that are filled only when there it errors.  Put message above the field and don't shift. */
+/* Bug 17306 MJO - Use for PB alert messages too */
+SPAN.error DIV, TD.ALERT
+{
+  background-color: #FEE;
+  font-weight: bold;
+  border: 1px solid red;
+  padding: 3px;
+  font-size: 0.9em;
+  color: black; /* position:absolute; */
+}
+DIV.File_viewer TD
+{
+  font-size: 75%;
+}
+DIV.File_viewer TABLE
+{
+  width: 100%;
+}
+
+/* used to keep label next to input field */SPAN.multi_field
+{
+  white-space: nowrap;
+}
+
+/* user INPUT type=text  or SPAN?? border on left and bottom.  black, bold text */
+SPAN.req_flag
+{
+  color: red;
+  padding-right: 0.2em;
+}
+.k
+{
+  padding-left: 1.0em;
+  vertical-align: top;
+  text-align: right;
+  font-variant: small-caps;
+  font-size: 1.0em;
+  color: #777;
+  padding-right: 0.5em;
+  /* Bug #10429 Mike O - Remove float */
+  /* float: right;*/
+}
+.key
+{
+  padding-left: 1.0em;
+  vertical-align: top;
+  text-align: right; /* merge with k above */
+  font-variant: small-caps;
+  font-size: 1.0em;
+  color: #777;
+  padding-right: 0.5em;
+}
+/* for multiple fields on line*/SPAN.k
+{
+  padding-right: 0.3em;
+}
+/* ??? */.key_details
+{
+  font-size: smaller;
+  font-variant: small-caps;
+  color: #777;
+  padding: 0px;
+}
+.text
+{
+  padding: 0 3px 0 0.2em;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  height: 1.4em;
+  border: medium none;
+  border-left: #888 1px solid;
+  border-bottom: #888 1px solid;
+}
+INPUT.readonly
+{
+  border: 0px;
+}
+TEXTAREA.readonly
+{
+  border: 0px;
+}
+INPUT.quantity
+{
+  width: 4em;
+}
+TEXTAREA.quantity
+{
+  width: 4em;
+}
+TD.total INPUT.text
+{
+  font-size: 1.3em;
+}
+/* tender total */
+TD.cc_ck_number INPUT.text
+{
+  font-size: 1.3em;
+}
+/* check number */
+
+/* Show GL segments in fixed width font */
+INPUT.Gl_number_segment-ui_config
+{
+  font-family: Fixedsys;
+}
+
+DIV.SELECT-list-prompt
+{
+  font-size: 0.8em;
+  color: #888;
+}
+
+/* end INPUT */
+
+/* END Business Data specific  ---------- */
+
+
+/* Business App specific --------------------------------------------------------------------------------------------- */
+
+/* top action bar */
+DIV.top_action_bar
+{
+  text-align: right;
+  float: right;
+  padding-bottom: 6px;
+  background: url(../images/action_bar.gif) repeat-x left bottom;
+  width: 100%;
+}
+
+/* action buttons typically at the bottom of a form */
+TD.action_bar
+{
+  text-align: center;
+}
+DIV.action_bar
+{
+  text-align: center;
+}
+
+/* Bug #10196 Mike O - Fix footer font */
+/* footer */DIV.footer
+{
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  vertical-align: bottom;
+  padding: 0px;
+}
+DIV.footer *
+{
+  vertical-align: bottom;
+}
+/* End Bug #10196 */
+
+/* in core item menu, action buttons should be on the far right */
+TD.continue
+{
+  text-align: right;
+}
+
+/* System closed for maintenance (Generic App used by all) */
+H3.service_closed_message
+{
+  margin: 25px;
+}
+.Closed
+{
+  border: none;
+  background: url(../images/closed.gif) #F7F7F7 no-repeat left top;
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+.Opened
+{
+  border: none;
+  background: url(../images/opened.gif) #F7F7F7 no-repeat left top;
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+/* Session expiration dialog boxes written by javascript */
+BODY.dialog_box
+{
+  background-color: #ececea;
+  text-align: center;
+}
+DIV.dialog_box
+{
+  margin: 100px;
+  padding: 30px;
+  padding-top: 80px;
+  background-color: white;
+  width: 437px;
+  height: 291px;
+  background: url(../images/fixed_dialog.gif) #2458ac no-repeat left top;
+}
+/* end System closed for maintenance */
+
+/* wait dialog (Generic App used by all) */
+.cover
+{
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+}
+/*new class when hidden iframe comes into focus*/
+.coverVisible
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #EEE;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0.0;
+  opacity: 0.0;
+  z-index: 1;
+}
+/*end bug 15003*/
+.wait_table
+{
+  /*   background-image: url(/pos_demo/baseline/pos/images/fixed_dialog2.gif);   background-repeat: no-repeat;   background-position: center center;   */
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+/*TABLE.wait_table TD TD { width: 40%; border: solid 3 yellow; }*/
+DIV.wait_dialog
+{
+  padding: 30px;
+  font-size: 14pt;
+  border: solid 1px black;
+}
+DIV.wait_dialog_inner
+{
+  text-align: center;
+}
+.message_table
+{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+DIV.message_dialog
+{
+  padding: 30px;
+  /* Bug #10131 Mike O - Use default font size */
+  /* font-size: 14pt; */
+}
+
+/* Hack to hide dialogs boxes in non-IE browsers */
+DIV#wait_dialog.wait_table, DIV#message_dialog.message_table
+{
+  display: none;
+}
+
+/* cross-platform for FireFox   Might be a better way */
+/* Bug #10163 Mike O - Improved cross-platform support (stopped working at some point) */
+SPAN.progress_bar
+{
+  height: 10px;
+  width: 10px;
+  background-color: #2458AC;
+  font-size: 4px;
+  position: absolute;
+}
+SPAN.anti_progress_bar
+{
+  height: 10px;
+  width: 580px;
+  background-color: white;
+  font-size: 4px;
+}
+/* end wait dialog */
+
+/* File_viewer app */
+TABLE.File_viewer TR.File_viewer_row TD
+{
+  border-top: 1px solid #CCC;
+}
+TABLE.File_viewer TD.expand_cell
+{
+  width: 15px;
+  background-color: white;
+}
+/* not working */
+
+/* Create_new_deposit app */
+TABLE.create_new_deposit
+{
+  width: 100%;
+}
+TABLE.create_new_deposit TR.tender_category_row TD
+{
+  border-bottom: 1px solid #CCC;
+}
+/* Hack for IE, as we can't use > for some reason */
+TABLE.create_new_deposit TR.tender_category_row TD TD
+{
+  border-bottom: none;
+}
+
+/* Bug #10105 Mike O - Firefox alignment issues */
+TABLE.create_new_deposit_fields
+{
+  text-align: left;
+  float: left;
+}
+
+/*TABLE.create_new_deposit TH { color: #999; border-bottom: 1 solid #CCC; vertical-align: bottom; 
+  padding-right: 10px;	
+}*/
+/* Bug #7757 Mike O - Changed white-space so it will wrap automatically when necessary */
+H3.core_file_htm_file_info
+{
+  white-space: pre-wrap;
+}
+TABLE.suspended_core_events TR.core_event TD
+{
+  border-bottom: 1px solid #CCC;
+  width: 100%;
+}
+
+TABLE.selecting_bank_account
+{
+  width: 100%;
+}
+TABLE.selecting_bank_account TD
+{
+  padding: 8px;
+  border-bottom: 1px solid #CCC;
+}
+
+/* counting dialog */
+.no_match_line_items TD
+{
+  border-top: 1px solid white;
+  background-color: pink;
+}
+
+/* security profile color mapping */
+DIV.security_profile_100
+{
+  background-color: yellow;
+}
+/* Administrator */
+DIV.security_profile_110
+{
+  background-color: red;
+}
+/* Supervisor */
+DIV.security_profile_120
+{
+  background-color: Green;
+}
+/* User */
+
+/* auto-receipt option */
+A.auto_receipt
+{
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.7em;
+  color: Black;
+  padding-right: 1em;
+  font-variant: small-caps;
+}
+A.auto_receipt.on
+{
+  color: #444;
+}
+A.auto_receipt.off
+{
+  color: #999;
+}
+
+/* transaction card_input */
+SPAN.card_inputs
+{
+}
+TABLE.grid_layout
+{
+  width: 100%;
+}
+TABLE.grid_layout TD.card
+{
+  vertical-align: top;
+  padding: 0.5em;
+  border-right: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+IMG.card_icon
+{
+  height: 64px;
+  width: auto;
+}
+/*Bug 12441 NJ-change cursor to indicate the whole card area is clickable*/
+DIV.card_input
+{
+	cursor:pointer;
+}
+DIV.card_input DIV.description
+{
+  font-weight: bold;
+}
+DIV.card_input DIV.description2
+{
+  font-size: .75em;
+  background-color: #F6F6F6;
+  border: 1px solid #CCC;
+  margin: 8px;
+  padding: 3px;
+}
+
+/* core_item icon */
+/* Bug #10105 Mike O - Show correctly in Firefox */
+DIV.htm_icon
+{
+  cursor: pointer;
+  margin: 3px;
+  border: 1px solid #CCC;
+  min-width: 64px; /* Bug #10579 Mike O - Changed to min to support non-IE browsers */
+  min-height: 72px; /* Bug #10579 Mike O - Changed to min to support non-IE browsers */
+  padding: 5px;
+  float: left;
+}
+IMG.htm_icon
+{
+  width: 48px;
+  height: 48px;
+  text-align: center;
+}
+DIV.htm_icon_text
+{
+  text-align: center;
+  margin: auto; /* Bug #10579 Mike O - Centering for non-IE browsers */
+  font-size: 8pt;
+  width: 64px; /* Bug #10579 Mike O - Maintain original size */
+  height: 72px; /* Bug #10579 Mike O - Maintain original size */
+}
+
+/* Search */
+DIV.Search_htm_field_form TD.criteria_group
+{
+  border: 1px solid #999;
+  background-color: #EEE;
+  padding: 4px;
+  vertical-align: top;
+}
+
+
+/* Batch Update */
+#core_file_list_expanded
+{
+  font-family: Courier;
+}
+.core_file_list_header
+{
+  color: Red;
+}
+
+/* Portal */
+DIV.app_button
+{
+  cursor: pointer;
+  /* Bug #10519 Mike O - Increased height to match min-height */
+  height: 53px;
+  /* Bug #10105 Mike O - Added min-height for Firefox, as IE adds extra pixels to its height */
+  min-height: 53px;
+  width: 155px;
+  background-color: white;
+  /* Bug #10519 Mike O - Align buttons to header image in Firefox */
+  margin: 0 auto;
+  padding: 1px;
+  border: 1px solid #888;
+  border-top: 0px;
+}
+DIV.app_button IMG
+{
+  width: 48px;
+  height: 48px;
+}
+DIV.app_button .right
+{
+  font-size: 15px;
+  font-weight: bold;
+  vertical-align: middle;
+  padding-left: 4px;
+}
+/* Bug #10519 Mike O - Don't allow the header to take up more vertical space than necessary */
+SPAN.app_button_header
+{
+  margin: 0;
+  padding: 0;
+  height: 54px;
+  overflow: hidden;
+}
+
+/* Bug 4039: FT: Bank Deposit Reconciliation */
+TR.recon_warning
+{
+  background-color: #FFFFAA;
+}
+TR.recon_late
+{
+  background-color: #FFC0CB;
+}
+TR.recon_new
+{
+  background-color: #BBDD88;
+}
+TR.recon_toggle_off
+{
+  visibility: hidden;
+}
+TR.recon_toggle_on
+{
+  visibility: visible;
+}
+TR.recon_default
+{
+}
+TR.recon_valign
+{
+  vertical-align: top;
+}
+TR.recon_report
+{
+  font-size: smaller;
+  border-bottom: #ccc 1px solid;
+}
+TD.recon_date
+{
+  width: 100px;
+  text-align: left;
+  border-bottom: white 1px solid;
+}
+/* Bug 9801: FT: Make sure that amount and slip # fields do not overflow fields */
+TD.recon_amount
+{
+  width: 100px;
+  word-wrap: break-word;
+  text-align: left;
+  border-bottom: white 1px solid;
+}
+TD.recon_text
+{
+  width: 100px;
+  word-wrap: break-word;
+  text-align: left;
+  border-bottom: white 1px solid;
+}
+TD.recon_checkbox
+{
+  width: 10px;
+  text-align: center;
+  border-bottom: white 1px solid;
+}
+TD.recon_toggle
+{
+  text-align: center;
+  border-bottom: white 1px solid;
+}
+/* Bug #9619 Mike O - These were made for the reconciliation detail page, incl. the printable version */
+TH.recon
+{
+  text-align: left;
+  border-bottom: #ccc 1px solid;
+}
+/* Bug 9619: FT: Padding needed for ref_num columns */
+TH.recon_ref_num
+{
+  text-align: left;
+  padding-left: .5em;
+  padding-right: .4em;
+  border-bottom: #ccc 1px solid;
+}
+/* Bug 9707: FT: Formats for report columns */
+TH.recon_report_dollars
+{
+  text-align: right;
+  padding-right: 2em;
+}
+TH.recon_report_1column
+{
+  width: 50px;
+  text-align: center;
+}
+TD.recon_date_black
+{
+  width: 100px;
+  text-align: left;
+  border-bottom: #ccc 1px solid;
+}
+TD.recon_amount_black
+{
+  width: 100px;
+  text-align: left;
+  border-bottom: #ccc 1px solid;
+}
+TD.recon_text_black
+{
+  width: 100px;
+  text-align: left;
+  border-bottom: #ccc 1px solid;
+}
+/* Bug 9619: FT: Padding needed for ref_num columns */
+TD.recon_ref_num
+{
+  width: 150px;
+  text-align: left;
+  border-bottom: none;
+  padding-left: .5em;
+  padding-right: .4em;
+  word-wrap: break-word;
+}
+TD.recon_checkbox_black
+{
+  text-align: center;
+  border-bottom: #ccc 1px solid;
+}
+/* Bug 9707: FT: Formats for report columns */
+TD.recon_report
+{
+  width: 100px;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: top;
+  border-bottom: #ccc 1px solid;
+}
+TD.recon_report_date
+{
+  width: 100px;
+  text-align: left;
+  white-space: nowrap;
+  padding-right: .4em;
+  vertical-align: top;
+  border-bottom: #ccc 1px solid;
+}
+TD.recon_report_ref_num
+{
+  width: 100px;
+  text-align: left;
+  padding-right: .4em;
+  word-wrap: break-word;
+  border-bottom: none;
+}
+TD.recon_report_dollars
+{
+  width: 100px;
+  text-align: right;
+  padding-right: 2em;
+  white-space: nowrap;
+  vertical-align: top;
+  border-bottom: #ccc 1px solid;
+}
+TD.recon_report_1column
+{
+  width: 50px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+  border-bottom: #ccc 1px solid;
+}
+TD.recon_report_comment
+{
+  width: 200px;
+  text-align: left;
+  vertical-align: top;
+  font-size: smaller;
+  border-bottom: #ccc 1px solid;
+}
+H3.recon
+{
+  border-bottom: #ccc 1px solid;
+}
+H3.recon_toggle
+{
+  visibility: hidden;
+}
+/* Bug 9714: FT: toggle the totals and overshorts but start invisible */
+H1.recon_match_confirm
+{
+  color: blue;
+  text-align: left; /* Bug #10291 Mike O */
+}
+SPAN.recon_date
+{
+  width: 100px;
+  text-align: left;
+  border-bottom: white 1px solid;
+}
+SPAN.recon_amount
+{
+  width: 100px;
+  text-align: left;
+  border-bottom: white 1px solid;
+}
+SPAN.recon_text
+{
+  width: 100px;
+  text-align: left;
+  border-bottom: white 1px solid;
+}
+SPAN.recon_report_time
+{
+  white-space: nowrap;
+}
+/* End basic Bug 4039 */
+
+/* Bug #11993 Mike O - Bank Rec */
+FORM.bank_rec
+{
+  height: 100%;
+  text-align: left;
+}
+
+/* Saved Reports */
+.reports_header, .user_custom_reports_header, .department_custom_reports_header
+{
+  font-weight: bold;
+}
+.user_custom_reports_subheader, .department_custom_reports_subheader
+{
+  font-weight: bold;
+}
+/*.custom_reports_group 
+{
+  width: 100%;
+}*/
+
+/* Enter_core_item */
+/*Bug 12441 NJ-change cursor to indicate whole row is clickable*/
+TR.htm_row_input
+{
+	cursor:pointer;
+}
+TR.htm_row_input TD.continue
+{
+  width: 1px;
+}
+/* minimize button column */
+TD.htm_icon_cell
+{
+  width: 1px;
+  padding: 0px;
+}
+/* minimize icon column */
+
+/* Creating core_item */
+TR.gl_row TD
+{
+  font-size: 8pt;
+  color: #red;
+  background-color: #DDD;
+  padding-left: 1.em;
+}
+TR.gl_row INPUT
+{
+  font-size: 8pt;
+  color: #555;
+}
+SPAN.gl_segment
+{
+  font-size: 8pt;
+  color: #666;
+  font-variant: small-caps;
+}
+
+TR.Business-htm_row_inst TD
+{
+  padding-right: 1.5em;
+}
+/* Hack to make sure inner TDs don't inherit the above attributes */
+TR.Business-htm_row_inst TD TD
+{
+  padding-right: 0;
+}
+
+TR.GEO-htm_row_inst TD
+{
+  padding-right: 1.5em;
+}
+TR.GEO-htm_row_inst TD TD
+{
+  padding-right: 0;
+}
+
+/* Config app */
+.Config TEXTAREA
+{
+  width: 300px;
+  height: 100px;
+}
+.Config TD.value INPUT
+{
+  border: 0;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 400px;
+  font-weight: bold;
+}
+.Config TD.value INPUT.inherited
+{
+  background-color: #FCFCFC;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  color: black;
+}
+/* Note: the browser makes the disabled font have a shadow and no combination of these can change it: font-variant: normal; font-style: normal; text-decoration: none; text-transform: none; */
+.Config TD.value TEXTAREA
+{
+  border: 0;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 400px;
+  font-weight: bold;
+}
+.Config TD.value TEXTAREA.inherited
+{
+  background-color: #FCFCFC;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  color: black;
+}
+/* Note: the browser makes the disabled font have a shadow and no combination of these can change it: font-variant: normal; font-style: normal; text-decoration: none; text-transform: none; */
+
+/* Bug #10569 Mike O */
+.Config .TABLE.config_border
+{
+  border: 1px solid #BBB;
+}
+
+TABLE.htm_config_inst SPAN.nested_obj_input
+{
+  width: 400px;
+}
+.Config .changes_message
+{
+  color: red;
+  font-size: larger;
+}
+/* Bug #10223 Mike O - Left-align all configuration tables */
+TABLE.htm_instances
+{
+  margin: 0;
+}
+TABLE.htm_instances TD
+{
+  border-right: 1px solid #DDD;
+  padding-right: 3px;
+  padding-left: 2px;
+  text-align: left; /* Bug #10223 Mike O - Left-align table contents */
+}
+/* Hack to make sure inner TDs don't inherit the above attributes */
+TABLE.htm_instances TD TD
+{
+  border-right: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+TABLE.htm_instances TR.odd TD
+{
+  background-color: #EEE;
+}
+TABLE.htm_instances TR.modified TD
+{
+  background-color: #CCF;
+}
+TABLE TR.deleted TD
+{
+  background-color: #FCC;
+  text-decoration: line-through;
+  color: #666;
+}
+/* was: TABLE.htm_instances */
+TABLE.htm_instances TR.created TD
+{
+  background-color: #FFC;
+}
+TABLE.htm_instances TR TD.actions
+{
+  background-color: white;
+  width: 61px;
+}
+DIV.htm_home_page_setup TD.help
+{
+  color: #333;
+  margin: 0px;
+  margin-top: 4px;
+  font-size: 10pt;
+}
+DIV.multiple_of_ui_config SPAN.current_list
+{
+  font-size: 0.75em;
+  vertical-align: middle;
+}
+DIV.vector_of_ui_config SPAN.current_list
+{
+  font-size: 0.75em;
+  vertical-align: middle;
+}
+SPAN.nothing_to_configure
+{
+  font-size: 0.75em;
+  color: #666;
+}
+
+TABLE.htm_config_inst TD.value INPUT.inherited_value
+{
+  border: 0px;
+  font-weight: normal;
+}
+TABLE.htm_config_inst TD.value TEXTAREA.inherited_value
+{
+  border: 0px;
+  font-weight: normal;
+}
+/* Bug #10223 Mike O - Left-align config fields */
+TABLE.htm_config_inst TR.config_prompt
+{
+  text-align: left;
+}
+/* TABLE.htm_config_inst TD.inherited_note { font-size: 9pt; } */
+TABLE.htm_config_inst TR.config_prompt TD
+{
+  padding: 0px;
+  padding-top: 8px;
+  font-size: 9pt;
+  color: Blue;
+}
+
+/* Business-process_f_ui_config */
+TABLE.Business-process_f_ui_config TD.page
+{
+  border: 1px solid black;
+  margin: 5px;
+  padding: 3px;
+  vertical-align: top;
+}
+TABLE.Business-process_f_ui_config DIV.page_name
+{
+  font-weight: bold;
+}
+TABLE.Business-process_f_ui_config DIV.field_name
+{
+  font-size: 8pt;
+}
+
+/* only print receipt from buying state */
+TD.account_num_core_items
+{
+  padding-left: 0.8em;
+}
+
+TD.desc_core_items
+{
+  padding-right: 0.5em;
+}
+
+TD.balance_core_items
+{
+  text-align: right;
+  padding-right: 0.1em;
+}
+
+TD.table_core_items
+{
+  width: 100%;
+  border-style: solid;
+}
+
+/* Bug #10575 Mike O */
+TABLE.confirm
+{
+  margin: 0;
+  width: 90%;
+  padding: .5em;
+}
+/* Bug#8121 ANU */
+TABLE.confirm TR.confirm_table_header TD
+{
+  padding-top: .5em;
+  padding-bottom: .5em;
+  vertical-align: middle;
+  height: 2em;
+  font-size: larger;
+}
+TABLE.confirm TD
+{
+  vertical-align :top;
+}
+
+TABLE.confirm TD.confirm_msg
+{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* Bug#8121 ANU end */
+TABLE.confirm_table
+{
+  width:85%;
+}
+TABLE.confirm_table TD.description
+{
+  text-align:left;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+TABLE.confirm_table TD.total
+{
+  text-align:right;
+}
+/* Bug# 6674 to print all the pages in network printer ANU */
+.framer_scrollable
+{
+  height: 100%;
+  overflow: auto;
+}
+
+/* Bug #10109 Mike O - HACK: Firefox workaround for scrollbar issues */
+@-moz-document url-prefix() 
+{
+  TR
+  {
+    height: 100%;
+  }
+  TH
+  {
+    height: 100%;
+  }
+  TD
+  {
+    height: 100%;
+  }
+  
+  /* Bug #10172 Mike O - Change how the Firefox scrollable hack is used */
+  .framer_scrollable_hack
+  {
+  height: 1px !important;
+  min-height: 100.1% !important;
+}
+  
+  /* Bug #10520 Mike O - HACK: Firefox needs an actual height */
+  .file_list_container
+  {
+    height: 300px;
+}
+}
+
+TABLE.centered
+{
+  height: 100%;
+}
+
+BODY.group_viewer_app
+{
+  overflow: auto;
+  margin: 5px;
+}
+
+.file_filter_table
+{
+  text-align: left;
+}
+
+/* Bug #10076 Mike O - Prevent border collapse in tables where we want to use cellspacing */
+.separated_borders
+{
+  border-collapse: separate !important;
+  border-spacing: 20px;
+  margin: 0 !important; /* Bug #10326 Mike O - Left align Open Deposits page */
+}
+
+/* Fix for strange behavior in Chrome */
+TABLE.s.printable
+{
+  height: auto;
+}
+
+.button
+{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  height: 100%;
+}
+
+/*Bug 10063 NJ*/
+TD#view_button
+{
+	width:20%
+}
+
+/*Bug 10660 NJ*/
+DIV.th, td.th
+{
+  color: #999;
+  border-bottom: solid 1px #CCC;
+  vertical-align: bottom;
+  padding-right: 10px;
+  /*font-variant: small-caps;*/
+  text-align: left;
+  font: small-caps bold;
+}
+
+/* Bug #10817 Mike O */
+.hidden, #hidden
+{
+  display: none;
+}
+
+/* Bug #10817 Mike O */
+.deposit_transfer
+{
+  width: 624px;
+}
+
+/* Bug #10817 Mike O */
+TABLE.deposit_transfer TH.right
+{
+  text-align: right;
+}
+
+TABLE.details TD.deposit
+{
+  border: #CCC 1px solid;
+}
+
+.list_menu TABLE
+{
+  width: 100%;
+}
+
+/*Bug 13161 NJ-styling for transaction/tender prompt*/
+DIV.prompt {
+	font-size:130%;	
+	font-weight:bold; /*Bug 13161 NJ*/
+}
+
+/* Bug 15423 payment selector filter */
+.filter_search {
+  background-image: url('../icons/search.png');
+  height: 24px;
+  width: 24px;
+  border: none;
+  padding: 0px;
+}
+
+/* BUG#11947  
+this section of css is for specific bank rec jquery database, 
+it need to change so it didn't apply to all jquery databases. 
+comment out this section for now when merging PB into trunk.  
+
+jQuery DataTables images  
+.paginate_disabled_previous {
+	background-image: url('../images/back_disabled.jpg');
+}
+
+.paginate_enabled_previous {
+	background-image: url('../images/back_enabled.jpg');
+}
+
+.paginate_disabled_next {
+	background-image: url('../images/forward_disabled.jpg');
+}
+
+.paginate_enabled_next {
+	background-image: url('../images/forward_enabled.jpg');
+}
+
+.sorting_asc {
+	background: url('../images/sort_asc.png') no-repeat center right;
+}
+
+.sorting_desc {
+	background: url('../images/sort_desc.png') no-repeat center right;
+}
+
+.sorting {
+	background: url('../images/sort_both.png') no-repeat center right;
+}
+
+.sorting_asc_disabled {
+	background: url('../images/sort_asc_disabled.png') no-repeat center right;
+}
+
+.sorting_desc_disabled {
+	background: url('../images/sort_desc_disabled.png') no-repeat center right;
+}
+
+.dataTables_wrapper {
+	position: relative;
+	min-height: 302px;
+	clear: both;
+	_height: 302px;
+}
+
+.dataTables_processing {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 250px;
+	height: 30px;
+	margin-left: -125px;
+	margin-top: -15px;
+	padding: 14px 0 2px 0;
+	border: 1px solid #ddd;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+	background-color: white;
+}
+
+.dataTables_length {
+	width: 40%;
+	float: left;
+	text-align: left;
+}
+
+.dataTables_filter {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.dataTables_info {
+	width: 60%;
+	float: left;
+	text-align: left;
+}
+
+.dataTables_paginate {
+	width: 44px;
+	float: right;
+	text-align: right;
+}
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next {
+	height: 19px;
+	width: 19px;
+	margin-left: 3px;
+	float: left;
+}
+
+.paging_full_numbers {
+	width: 400px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.paging_full_numbers span.paginate_button,
+ 	.paging_full_numbers span.paginate_active {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 2px 5px;
+	margin: 0 3px;
+	cursor: pointer;
+}
+
+.paging_full_numbers span.paginate_button {
+	background-color: #ddd;
+}
+
+.paging_full_numbers span.paginate_button:hover {
+	background-color: #ccc;
+}
+
+.paging_full_numbers span.paginate_active {
+	background-color: #99B3FF;
+}
+*/
+
+/* Bug 15658 MJO - Keep the footer within the page */
+DIV.receipt_footer {
+  width: 100%;
+}
+
+/* Bug 15658 MJO - Keep the footer within the page */
+/* From http://stackoverflow.com/questions/1634203/pre-tag-in-html-with-fixed-width */
+pre {
+    white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+    white-space: -pre-wrap; /* Opera */
+    white-space: -o-pre-wrap; /* Opera */
+    white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+    word-wrap: break-word; /* IE 5.5+ */
+}

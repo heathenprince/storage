@@ -1,0 +1,8 @@
+* {
+  font-family: Tahoma,sans-serif;
+  border-radius: 5px;
+}
+
+table {
+      background-color: #99CCFF;
+}

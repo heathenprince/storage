@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!-- 
+     Sample Login System Landing Page
+     by 
+     .   ___|  |             |                            
+     .  |      |  |   |   _` |   _ \                      
+     .  |      |  |   |  (   |   __/                      
+     . \____| _| \__, | \__,_| \___|                      
+     .  | ) __ __|__|/     |          _|   _|         | ) 
+     . V V     |    __ \   |  |   |  |    |    |   | V V  
+     .         |    | | |  |  |   |  __|  __|  |   |      
+     .        _|   _| |_| _| \__,_| _|   _|   \__, |      
+     .   ___|  _)               |        _)   ____/       
+     . \___ \   |  __ \    __|  |   _` |  |   __|         
+     .       |  |  |   |  (     |  (   |  |  |            
+     . _____/  _| _|  _| \___| _| \__,_| _| _|                 
+
+  -->
+
+<html>
+<head>
+<title>Sample Login Page</title>
+<link type="text/css" rel="stylesheet" href="login_stylesheet.css"/>
+</head>
+
+<body>
+
+  <h3>Enter your username and password to login</h3>
+
+  <br>
+
+  <form method="POST" action="login.py">
+    <table>
+      <tr> 
+	<td>     
+	  username: 
+	</td>     
+	<td>     
+	  <input type="text" name="uname">
+	</td>     
+
+      </tr>
+      <tr>
+	<td>     
+	  password: 
+	</td>     
+	<td>     
+	  <input type="password" name="upass">
+	</td>     
+      </tr>
+      <tr>
+	<td>
+	  <input type="submit" name="mode" value="Login">
+      </td></tr>
+    </table>
+  </form>
+
+</body>
+</html>

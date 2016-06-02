@@ -1,0 +1,111 @@
+#!/usr/bin/python
+print "Content-Type: text/html\n"
+print ""
+print """<head><title>Madlibify -- Ebao&Atol</title></head>
+<body bgcolor="#CCFFFF">
+<font color="green">
+<h2>Madlibify -- Eric Bao & Anna Tolen</h2>
+"""
+"""Team For the WINdex -- Eric Bao, Anna Tolen
+IntroCS2 pd3
+HW42 -- Vroom Vrooom WOW!
+2015-04-28"""
+
+"""
+Mechanism for Madlibification
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. obtain libraries (lists of words for each part of speech (nouns, adjectives,$
+2. make a helper function to get a random word from a list
+3. check to see if there are any more "<" to replace
+2. make a helper function to get a random word from a list
+3. check to see if there are any more "<" to replace
+4. replaces all "<" and the word it encloses with a random word from the respec$
+5. print modified string
+6. ???
+42. profit!
+
+New Features in Version 2:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. accounts for capitalization, punctuation, and articles!
+2. more tenses!
+"""
+import string
+import random
+placeholders=["<NOUN-SINGULAR>","<NOUN-PLURAL>","<ADJECTIVE>","<ADVERB>","<VERB$
+nounSing=["spaceship","dragon","elephant","venus fly trap","hobbit","honey badg$
+nounPl=["magic wands","cheerios","snowboards","platypods","kangaroos","monks","$
+adjs=["dorky","intelligent","blue","extraterrestrial"]
+advs=["slowly","quietly","carelessly","joyfully","paradoxically"]
+adjs=["dorky","intelligent","blue","extraterrestrial"]
+advs=["slowly","quietly","carelessly","joyfully","paradoxically"]
+verbsPresSing=["runs","eats","flies","babbles","flaps","postulates","snorts","s$
+verbsPresPl=["flood","write","sing","extrapolate","eat","wander","wonder","hex"$
+verbsPast=["walked","ran","jumped","coded"]
+
+wordtype = [nounSing, nounPl, adjs, advs, verbsPresSing, verbsPresPl,verbsPast]
+
+
+
+vowels="aeiouAEIOU"
+def hasPunc(word): #punk isn't dead B-)
+    string.ascii_letters+=">"
+    if word[-1] not in string.ascii_letters:
+        i=-1
+        while abs(i) < len(word):
+            if word[i] not in string.ascii_letters:
+                i-=1
+            else:
+                i-=1
+            else:
+                return i+1
+    else:
+        return len(word)
+
+def randWord(L):
+    return L[random.randrange(len(L))]
+
+def madlibify(story):
+    storyList=story.split(" ")
+    typedex=0
+    while typedex<len(placeholders):
+        windex=0 #keep your functions clean!
+        lindex=0
+        while windex<len(storyList):
+            lindex=windex
+            if storyList[windex].find("<") != -1:
+                lindex=windex
+            if storyList[windex].find("<") != -1:
+                lindex=windex
+                puncRun=hasPunc(storyList[lindex])
+                if storyList[windex][:puncRun] == placeholders[typedex]:
+                    storyList[windex]=storyList[windex].replace(storyList[winde$
+                if windex==0:
+                    storyList[windex]=storyList[windex].capitalize()
+            windex+=1
+        typedex+=1
+
+    windex=0
+    while windex<len(storyList):
+        if storyList[windex].lower() == "a":
+            if storyList[windex+1][0] in vowels:
+                if windex==0:
+                    storyList[windex] = "An"
+                else:
+                    storyList[windex] = "an"
+        windex+=1
+                    storyList[windex] = "an"
+        windex+=1
+
+    windex=1
+    while windex<len(storyList):
+        if hasPunc(storyList[windex-1])<0:
+            storyList[windex]=storyList[windex].capitalize()
+        windex+=1
+
+    story=" ".join(storyList)
+    return story
+
+print madlibify("The <b> <ADJECTIVE> <NOUN-SINGULAR> <VERB-PAST> <ADVERB> </b>u$
+
+
+
